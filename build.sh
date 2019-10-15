@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-CACHE_METHOD=image
+CACHE_METHOD="${CACHE_METHOD:-image}"
 
 BUILDER_IMAGE=lifecycle-cache-error/builder
 RUN_IMAGE=cnbs/run:bionic
