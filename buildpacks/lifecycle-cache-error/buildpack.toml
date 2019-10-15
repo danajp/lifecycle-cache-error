@@ -1,0 +1,9 @@
+api = "0.2"
+
+[buildpack]
+id="io.greenhouse.lifecycle-cache-error"
+version="0.0.1"
+name="Just make a cached layer"
+
+[[stacks]]
+id="io.buildpacks.stacks.bionic"

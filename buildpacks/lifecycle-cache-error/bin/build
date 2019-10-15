@@ -1,0 +1,18 @@
+#!/bin/bash
+
+main() {
+  layersdir="$1"
+  platformdir="$2"
+  plan="$3"
+
+  mkdir -p "$layersdir/cacheme"
+  date > "$layersdir/cacheme/date.txt"
+  cat > "$layersdir/cacheme.toml" <<EOF
+build = false
+launch = false
+cache = true
+EOF
+
+}
+
+main "$@"

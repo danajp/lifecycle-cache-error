@@ -1,0 +1,13 @@
+[stack]
+id = "io.buildpacks.stacks.bionic"
+build-image = "cnbs/build:bionic"
+run-image = "cnbs/run:bionic"
+
+[[buildpacks]]
+id = "io.greenhouse.lifecycle-cache-error"
+uri = "buildpacks/lifecycle-cache-error"
+
+[[order]]
+[[order.group]]
+id = "io.greenhouse.lifecycle-cache-error"
+version = "0.0.1"
